@@ -1,0 +1,252 @@
+@font-face {
+    font-family: "montserat";
+    src: url("../font/Montserrat-VariableFont_wght.ttf")
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body,
+header {
+    background-color: #15191f;
+    color: white;
+    font-family: "montserat";
+    margin: 0;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    max-width: calc(100vw - (100vw - 100%));
+    overflow-x: hidden;
+}
+
+header>div {
+    display: grid;
+    grid-template-columns: 32% 32% 32%;
+    justify-content: center;
+    text-align: center;
+    background-color: white;
+    padding: 10px;
+    align-items: center;
+    position: fixed;
+    min-width: 100%;
+    z-index: 100;
+}
+
+.link_head:any-link {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.link_head:hover {
+    transition: 0.2s;
+    color: #E10307;
+}
+
+.center {
+    display: flex;
+    max-width: 100vh;
+    padding-top: 10vh;
+    margin: 0 auto;
+}
+
+.title {
+    padding-top: 10vh;
+    text-align: center;
+}
+
+.desc,
+.link_bsd_wiki {
+    text-align: center;
+    padding-top: 2vh;
+    line-height: 3vh;
+}
+
+.link_bsd_wiki>a:any-link {
+    color: black;
+    background-color: white;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.link_bsd_wiki>a:hover {
+    color: #E10307;
+    background-color: #15191f;
+    border: #E10307 solid 1px;
+    padding-left: 25px;
+    padding-right: 25px;
+    transition: 0.2s;
+}
+
+
+.prof {
+    border: white solid 2px;
+    display: flex;
+    flex-direction: column;
+    max-width: 100vh;
+    padding: 10px;
+    align-items: center;
+    margin: 0 auto;
+    transition: 0.2s;
+}
+
+.prof:hover {
+    border: #E10307 solid 2px;
+    transition: 2s;
+}
+
+.profile {
+    padding-top: 10px;
+    display: grid;
+    grid-template-columns: 20% 60%;
+    text-align: center;
+    align-items: center;
+}
+
+.profile>div>img {
+    border-radius: 100%;
+}
+
+.profile>div>h3 {
+    opacity: 0.5;
+    font-weight: normal;
+}
+
+.profile_desc {
+    padding-top: 2.5vh;
+    font-size: 25px;
+}
+
+.flex_line {
+    display: grid;
+    grid-template-columns: 10% 90%;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.flex_line>p {
+    text-align: left;
+}
+
+.line_infos_profile {
+    display: grid;
+    grid-template-columns: 45% 45%;
+    justify-content: left;
+}
+
+.spacer {
+    padding: 5vh;
+}
+
+/*Twitter feed*/
+.tweet {
+    display: grid;
+    min-height: 15vh;
+    border: rgb(164, 164, 164) solid .1px;
+    padding: 10px;
+}
+
+.username {
+    display: grid;
+    grid-template-columns: 5% 50%;
+    column-gap: 2%;
+    align-items: center;
+    margin-bottom: 2%;
+}
+
+.pfp {
+    border-radius: 100%;
+}
+
+.username_span {
+    font-weight: bold;
+}
+
+.at {
+    font-weight: normal;
+    font-size: smaller;
+    opacity: 50%;
+}
+
+.date_time {
+    font-size: smaller;
+    opacity: 50%;
+}
+
+.feed {
+    max-width: 100vh;
+    margin-left: auto;
+    margin-right: auto;
+    max-height: 100vh;
+    overflow-y: scroll;
+    background-color: #000000;
+}
+
+.img {
+    border-radius: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2vh;
+}
+
+video {
+    border-radius: 20px;
+}
+
+.grid_2,
+.grid_3,
+.grid_4 {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    border-radius: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2vh;
+    align-items: center;
+
+}
+
+.twt_link:any-link {
+    color: white;
+}
+
+.twt_link:hover {
+    color: #E10307;
+    transition: 0.2s;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #15191f;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: white;
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #E10307;
+    transition: 0.2s;
+}
+
+.credits{
+    text-align: center;
+}
+
+.credits>img{
+    border-radius: 100%;
+}
